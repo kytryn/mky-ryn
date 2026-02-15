@@ -141,18 +141,18 @@ document.addEventListener("DOMContentLoaded", function () {
         if(frameNumber > 2000 && frameNumber < 2250){
             context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
             if(window.innerWidth < 600) {
-                drawTextWithLineBreaks(["I’ll be your shield and your shoulder"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+                drawTextWithLineBreaks(["I’ll be your shield and your shoulder I’ll stay with u thru every storm keeping u safe and close"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
             } else {
-                context.fillText("I’ll be your shield and your shoulder", canvas.width/2, canvas.height/2);
+                context.fillText("I’ll be your shield and your shoulder I’ll stay with u thru every storm keeping u safe and close", canvas.width/2, canvas.height/2);
             }
             opacity += 0.01;
         }
         if(frameNumber >= 2250 && frameNumber < 2500){
             context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
             if(window.innerWidth < 600) {
-                drawTextWithLineBreaks(["I’ll stay with u thru every storm keeping you safe and close"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+                drawTextWithLineBreaks(["I’ll be your shield and your shoulder I’ll stay with u thru every storm keeping you safe and close"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
             } else {
-                context.fillText("I’ll stay with u thru every storm keeping you safe and close", canvas.width/2, canvas.height/2);
+                context.fillText("I’ll be your shield and your shoulder I’ll stay with u thru every storm keeping you safe and close", canvas.width/2, canvas.height/2);
             }
             opacity -= 0.01;
         }

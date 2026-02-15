@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if(frameNumber >= 3000){
             context.fillStyle = `rgba(45, 45, 255, ${thirdOpacity})`;
-            context.fillText("Happy Valentine's Day Mekyla I LOVE YOU WITH ALL MY HEART AND (NINE) LIVES <3", canvas.width/2, canvas.height/2 + 120);
+            context.fillText("Happy Valentines Day Mekyla I LOVE YOU WITH ALL MY HEART AND NINE LIVES <3", canvas.width/2, canvas.height/2 + 120);
             thirdOpacity += 0.01;
             button.style.display = "block";
         }

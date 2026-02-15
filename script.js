@@ -1,3 +1,21 @@
+document.addEventListener("DOMContentLoaded", function () {
+
+const canvas = document.getElementById("starfield");
+const context = canvas.getContext("2d");
+
+const song = document.getElementById("valentineSong");
+const button = document.getElementById("valentinesButton");
+
+button.addEventListener("click", () => {
+    song.play();
+});
+
+});
+
+const song = document.getElementById("valentineSong");
+const button = document.getElementById("valentinesButton");
+
+
 var canvas = document.getElementById("starfield");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -50,14 +68,28 @@ function updateStars() {
 }
 
 const button = document.getElementById("valentinesButton");
+button.addEventListener("click", () => {
+
+  song.play(); // 🔥 THIS STARTS THE MUSIC
+
+  if (button.textContent === "Click Me! ❤(i hope u read this with a smile on your face bu") {
+    button.textContent = "loading...";
+    
+    setTimeout(() => {
+      button.textContent = "Check Your Messenger 🙃";
+    }, 2000);
+  }
+});
 
 button.addEventListener("click", () => {
-  if (button.textContent === "Click Me! ❤") {
+   if (button.textContent === "Click Me! ❤(i hope u read this with a smile on ur face bu") {
     button.textContent = "loading...";
-    fetch('send_mail.php')
-      .then(response => {
-        if (response.ok) {
-          button.textContent = "Check Your Messenger 🙃";
+    
+    setTimeout(() => {
+      button.textContent = "Check Your Messenger 🙃";
+    }, 2000);
+  }
+});
         } else {
           console.error('Failed to send email');
           button.textContent = "Error 😞";
